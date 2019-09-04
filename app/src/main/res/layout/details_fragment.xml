@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linear"
+
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="24pt"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img5" />
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="top"
+                    android:padding="16dp">
+
+                    <!--<ImageView-->
+
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/menu"-->
+                    <!--android:layout_gravity="left"-->
+                    <!--/>-->
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_above="@+id/pay">
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <customfonts.MyTextView
+                        android:layout_weight="1"
+                        android:id="@+id/totalprice"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Price"
+                        android:textColor="@color/text"
+                        android:background="#0000"
+                        android:padding="16dp"
+                        android:gravity="left"
+                        />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="right"
+                        android:padding="16dp"
+                        android:text="&#x20B9; 3200"
+                        android:textColor="@color/subtext"
+                        android:textSize="16dp" />
+
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/devider"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="50dp"
+
+                    >
+
+                    <customfonts.MyTextView
+                        android:layout_weight="1"
+                        android:id="@+id/size"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Size"
+                        android:textColor="@color/text"
+                        android:background="#0000"
+                        android:padding="16dp"
+                        android:gravity="left"/>
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="XS"
+
+                        android:padding="10dp"
+                        android:textColor="@color/subtext"
+                        android:background="@drawable/text_round1"
+                        />
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="S"
+                        android:textColor="@color/subtext"
+                        android:background="@drawable/text_round1"
+                        />
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:textColor="@color/subtext"
+                        android:padding="10dp"
+                        android:background="@drawable/text_round1"
+                        />
+                    <TextView
+                        android:id="@+id/tv4"
+
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="L"
+                        android:gravity="center"
+                        android:textColor="@color/subtext"
+                        android:padding="10dp"
+                        android:background="@drawable/text_round1"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <customfonts.MyTextView
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_secendary"
+        android:text="ADD TO CARD"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+
+    </include>
+
+
+
+</RelativeLayout>

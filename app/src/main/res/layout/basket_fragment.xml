@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/basket_rec"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <customfonts.MyTextView
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_secendary"
+        android:text="PROCESS TO CHECKOUT"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+
+    </include>
+
+
+
+</RelativeLayout>

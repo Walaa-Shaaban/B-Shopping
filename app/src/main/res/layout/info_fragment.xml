@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presenter.ui.info_activity.InfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="62dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#f7f7f9"
+                    android:orientation="vertical">
+
+                    <customfonts.MyEditText
+                        android:id="@+id/fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="11dp"
+                        android:background="#00000000"
+                        android:hint="Full Name"
+                        android:inputType="text"
+                        android:maxLines="1"
+
+
+                        android:textColorHint="@color/subtext" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#f7f7f9"
+                    android:orientation="vertical">
+
+                    <customfonts.MyEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="11dp"
+                        android:background="#00000000"
+                        android:hint="Email"
+                        android:inputType="text"
+                        android:maxLines="1"
+
+
+                        android:textColorHint="@color/subtext" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#f7f7f9"
+                    android:orientation="vertical">
+
+                    <customfonts.MyEditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="11dp"
+                        android:background="#00000000"
+                        android:hint="Phone number"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColorHint="@color/subtext" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#f7f7f9"
+                    android:orientation="vertical">
+
+                    <customfonts.MyEditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="11dp"
+                        android:background="#00000000"
+                        android:hint="Address"
+                        android:inputType="text"
+                        android:maxLines="1"
+
+
+                        android:textColorHint="@color/subtext" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#f7f7f9"
+                    android:orientation="vertical">
+
+                    <customfonts.MyEditText
+                        android:id="@+id/zip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="11dp"
+                        android:background="#00000000"
+                        android:hint="Zip Code"
+                        android:inputType="text"
+                        android:maxLines="1"
+
+
+                        android:textColorHint="@color/subtext" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="21dp"
+                    android:background="#f7f7f9"
+                    android:orientation="vertical">
+
+                    <customfonts.MyEditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="11dp"
+                        android:background="#00000000"
+                        android:hint="City"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:textColorHint="@color/subtext" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/continue_to_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_secendary"
+            android:text="Pay  &#x20B9; 3200"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar">
+
+        </include>
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
